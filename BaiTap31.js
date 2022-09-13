@@ -6,7 +6,8 @@
  * 3. Tìm hiểu cách require một 3rd-party module trên repl.it: https://repl.it/site/blog/npm
  * 4. Require module này và tạo ra 1 password ngẫu nhiên có 8 ký tự, dạng dễ nhớ
  */
-
+var password = require('password-generator');
+console.log("Hello, this is your password: ", password(8, false));
 
 
 //Bai tap 2
@@ -15,7 +16,9 @@
  * 2. Tìm hiểu xem markdown là cái gì (dev nên biết về markdown)
  */
 
- var markdownText = 'Hello *Coders.Tokyo*!';
+var markdownText = 'Hello *Coders.Tokyo*!';
+var markdown = require('markdown').markdown;
+console.log(markdown.toHTML(markdownText));
 
 
 
