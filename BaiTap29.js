@@ -28,3 +28,7 @@ console.log(math.sum(arrNum));
  *  3. Circle có 1 method là isOverlapped (overlap là chồng lấn, đè lên nhau), trả về -1 nếu 2 hình tròn này đè lên nhau, trả về 1 nếu 2 hình tròn không đụng nhau, trả về 0 nếu 2 hình tròn tiếp xúc nhau.
  *  4. Test thử
  */
+var circle = require('./Circle.js');
+var c1 = new circle(1,1,1);
+var c2 = new circle(0,0,3);
+console.log(c1.isOverlapped(c2));
